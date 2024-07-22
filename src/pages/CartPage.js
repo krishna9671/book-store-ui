@@ -30,7 +30,7 @@ const Cart = () => {
             const response = await fetch(`${API_BASE_URL}/cart/removecart?username=${userId}`, {
                 method:'DELETE',
             });
-            const data = await response.json();
+            // const data = await response.json();
             
           } catch (error) {
             console.error('Error fetching cart:', error);
